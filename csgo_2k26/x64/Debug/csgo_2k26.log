@@ -1,0 +1,62 @@
+﻿  imgui.cpp
+  imgui_draw.cpp
+  imgui_impl_dx9.cpp
+  imgui_impl_win32.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  dt_recv.cpp
+  main.cpp
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(142,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'dt/dt_recv.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(145,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'dt/dt_recv.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(148,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'dt/dt_recv.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(152,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'dt/dt_recv.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(162,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'dt/dt_recv.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(165,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'dt/dt_recv.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(168,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'dt/dt_recv.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(171,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'dt/dt_recv.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(142,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'main.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(145,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'main.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(148,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'main.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(152,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'main.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(162,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'main.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(165,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'main.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(168,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'main.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\dt\dt_common.h(171,5): error C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file 'main.cpp')
+  
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\main.cpp(113,48): error C2065: 'GWL_WNDPROC': undeclared identifier
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\main.cpp(148,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\main.cpp(150,2): error C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\main.cpp(151,2): error C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\gfhhfghjfgh\Desktop\CS-GO-2k26-legit-cheat\csgo_2k26\main.cpp(152,2): error C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...

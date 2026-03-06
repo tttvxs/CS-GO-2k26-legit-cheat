@@ -2,11 +2,11 @@
 #include "deps/imgui/imgui.h"
 #include "deps/imgui/imgui_impl_win32.h"
 #include "deps/imgui/imgui_impl_dx9.h"
-#include <d3d9.h>
 #include "deps/minhook/include/MinHook.h"
-//#include <d3dx9.h>
+
+#include <d3d9.h>
+#include <map>
 #pragma comment(lib, "d3d9.lib")
-//#pragma comment(lib, "d3dx9.lib")
 
 CHLClient* Client;
 IClientEntityList* ClientEntityList;
@@ -120,24 +120,22 @@ long __stdcall hkEndScene(LPDIRECT3DDEVICE9 pDevice) {
 
 	if (opened) {
 		ImGui::Begin("ImGui Window");
-
 		unhook = ImGui::Button("Unhook");
-
 		ImGui::End();
 	}
 
-	for (int i = 0; i < ClientEntityList->GetHighestEntityIndex(); i++) {
-		auto entity = (CBaseEntity*)ClientEntityList->GetClientEntity(i);
-		if (!entity) continue;
-		if (entity->GetClientClass()->m_ClassID == 40) {//player - 40 | c4 - 34 | world - 275
-			auto pos = entity->GetAbsOrigin();
-			Vector screen;
-			if (DebugOverlay->ScreenPosition(pos, screen)) {
-				ImGui::GetBackgroundDrawList()->AddLine({ 0,0 }, { screen.x, screen.y }, ImColor(255, 255, 255));
-			}
-			//printf("%s | [%.2f, %.2f, %.2f]\n", entity->GetClientClass()->GetName(), pos.x, pos.y, pos.z);
-		}
-	}
+	//for (int i = 0; i < ClientEntityList->GetHighestEntityIndex(); i++) {
+	//	auto entity = (CBaseEntity*)ClientEntityList->GetClientEntity(i);
+	//	if (!entity) continue;
+	//	if (entity->GetClientClass()->m_ClassID == 40) {//player - 40 | c4 - 34 | world - 275
+	//		auto pos = entity->GetAbsOrigin();
+	//		Vector screen;
+	//		if (DebugOverlay->ScreenPosition(pos, screen)) {
+	//			ImGui::GetBackgroundDrawList()->AddLine({ 0,0 }, { screen.x, screen.y }, ImColor(255, 255, 255));
+	//		}
+	//		//printf("%s | [%.2f, %.2f, %.2f]\n", entity->GetClientClass()->GetName(), pos.x, pos.y, pos.z);
+	//	}
+	//}
 
 	ImGui::EndFrame();
 	ImGui::Render();
@@ -151,24 +149,24 @@ void main(HINSTANCE hinst) {
 	freopen("CONOUT$", "w", stdout);
 	freopen("CONOUT$", "w", stderr);
 
-    Client = memory::GetInterface<CHLClient*>("client.dll", "VClient018");
-    ClientEntityList = memory::GetInterface<IClientEntityList*>("client.dll", "VClientEntityList003");
-    DebugOverlay = memory::GetInterface<IVDebugOverlay*>("engine.dll", "VDebugOverlay004");
-	auto dx9device = **reinterpret_cast<IDirect3DDevice9***>(memory::PatternScan("shaderapidx9.dll", "A1 ? ? ? ? 50 8B 08 FF 51 0C") + 0x1);
-
+    //Client = memory::GetInterface<CHLClient*>("client.dll", "VClient018");
+    //ClientEntityList = memory::GetInterface<IClientEntityList*>("client.dll", "VClientEntityList003");
+    //DebugOverlay = memory::GetInterface<IVDebugOverlay*>("engine.dll", "VDebugOverlay004");
+	//PanoramaUIEngine = memory::GetInterface<IPanoramaUIEngine*>("panorama.dll", "PanoramaUIEngine001");
+	//VBaseFileSystem = memory::GetInterface<CBaseFileSystem*>("filesystem_stdio.dll", "VBaseFileSystem011");
+	//auto dx9device = **reinterpret_cast<IDirect3DDevice9***>(memory::PatternScan("shaderapidx9.dll", "A1 ? ? ? ? 50 8B 08 FF 51 0C") + 0x1);
+	
 	MH_Initialize();
-
-	MH_CreateHook(memory::GetVtable(dx9device)[42], &hkEndScene, (void**)&oEndScene);
-
+	//MH_CreateHook(memory::GetVtable(dx9device)[42], &hkEndScene, (void**)&oEndScene);
 	MH_EnableHook(MH_ALL_HOOKS);
 
-	DebugOverlay->AddCapsuleOverlay
-
     while (!unhook) {
+		unhook = (GetAsyncKeyState(VK_F11) & 0x1);
         std::this_thread::sleep_for(std::chrono::milliseconds(1));
     }
+
 	printf("Unhooked!\n");
-	MH_DisableHook(MH_ALL_HOOKS);
+	//MH_DisableHook(MH_ALL_HOOKS);
     FreeLibraryAndExitThread(hinst, 0);
 }
 
